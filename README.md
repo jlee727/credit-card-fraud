@@ -13,5 +13,11 @@
 
 ## Data
 
-[Credit card fraud dataset](https://stat432.org/data/creditcard.csv.gz)
+
+The [Credit Card Fraud Dataset](https://stat432.org/data/creditcard.csv.gz) was accessed via Kaggle. It contains information regarding credit card users' transaction over the span of two days in September, 2013. Most of the predictor information have been transformed with PCA due to confidentiality. Information that remains interpretable includes `Time`, `Amount`, and `Class`.
+
+- `Time`: time elapsed (in seconds) between this transaction and the first transaction 
+- `Amount`: transaction amount
+- `Class`: binary variable with values `fraud` and `genuine`
+
 
