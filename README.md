@@ -11,13 +11,7 @@
 **R version 3.6.1**
 
 
-## EDA
+## Data
 
-
-
-
-## Model Building
-
-
-## Model Performance
+[Credit card fraud dataset](https://stat432.org/data/creditcard.csv.gz)
 
