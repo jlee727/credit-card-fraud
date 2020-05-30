@@ -21,3 +21,12 @@ The [Credit Card Fraud Dataset](https://stat432.org/data/creditcard.csv.gz) was 
 - `Class`: binary variable with values `fraud` and `genuine`
 
 
+## Model Building
+
+-	Gradient boosting machine 
+- Boosted logistic regression
+- Neural network
+
+Two validation methods were utilized. First, models were validated through 5-fold cross validation. Then, conducted subsampling according to ROSE with 5-fold cross validation to address issue of imbalance in response variable. The True Positive Rate, or Sensitivity, will be the metric of choice for validation
+
+
