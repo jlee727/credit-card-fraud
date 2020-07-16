@@ -28,7 +28,7 @@ library(knitr)
 library(kableExtra)
 library(ggplot2)
 library(gridExtra)
-library(gbm)=
+library(gbm)
 library(ROSE)
 library(caTools)
 ```
@@ -89,7 +89,7 @@ Two validation methods were utilized. First, models were validated through 5-fol
 
 ### 5-fold cross validation
 
-```{r, cv-control-5-fold, echo = TRUE}
+```{r, cv-control-5-fold, echo = TRUE, warning = FALSE}
 cv = trainControl(
   classProbs = TRUE,
   method = "cv",
@@ -98,7 +98,7 @@ cv = trainControl(
 )
 ```
 
-```{r}
+```{r, echo = TRUE, warning = FALSE}
 set.seed(42)
 glm_mod = train(
   Class ~ . - Time,
@@ -146,7 +146,7 @@ nnet_mod = train(
 )
 ```
 
-### Subsample for Imbalance
+### Subsample for Imbalance with ROSE
 
 ```{r, cv-control-subsampling-for-imbalance, echo = TRUE}
 cv_ss = trainControl(
